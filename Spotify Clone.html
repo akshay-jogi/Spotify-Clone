@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="shrink">
+        <input type="checkbox" id="expand">
+
+        <div class="nav-bar">
+            <div class="nav1">
+                <i class="fa-brands fa-spotify"></i>
+                <i class="fa-solid fa-house"></i>
+                <div class="search-box">
+                    <i class="fa-brands fa-sistrix"></i>
+                    <p>What do you want to play?</p>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="nav2">
+                <h4>Explore Premium</h4>
+                <div class="div1">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <h4>Install App</h4>
+                </div>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-users"></i>
+                <div class="user"><b>A</b></div>
+            </div>
+        </div>
+
+        <div class="all-main">
+            <div class="Your-Library">
+                <div class="library-top">
+                    <label for="shrink"><i class="fa-solid fa-angle-left"></i></label>
+                    <p>Your Library</p>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+                <div class="select-more">
+                    <p class="more playlist">Playlists</p>
+                    <p class="more artist">Artist</p>
+                    <p class="more albums">Albums</p>
+                    <p class="more pod-&-shows">Podcasts</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="songs">
+                    <div class="search-and-recents">
+                        <i class="fa-brands fa-sistrix"></i>
+                        <div class="recents">
+                            <p>Recents</p>
+                            <i class="fa-solid fa-list-ul"></i>
+                        </div>
+                    </div>
+                    <div class="followed-and-liked">
+                        <div class="liked">
+                            <img src="liked-songs.jpg" alt="liked">
+                            <div class="more">
+                                <p class="title">Liked Songs</p>
+                                <p class="info"><i class="fa-solid fa-thumbtack fa-rotate-by"
+                                        style="--fa-rotate-angle: 40deg;"></i> Playlist &bull; 93 songs</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Money.png" alt="liked">
+                            <div class="more">
+                                <p class="title">Money &#128184;</p>
+                                <p class="info">Playlist &bull; Akshay J</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Arijit.jpg" alt="liked" class="Artist">
+                            <div class="more">
+                                <p class="title">Arijit Sing</p>
+                                <p class="info">Artist</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Hard beats.jpg" alt="liked">
+                            <div class="more">
+                                <p class="title">Hard Beats &#x1F525;</p>
+                                <p class="info">Playlist &bull; Akshay J</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Karma.jpg" alt="liked" class="Artist">
+                            <div class="more">
+                                <p class="title">Karma</p>
+                                <p class="info">Artist</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Motives.jpg" alt="liked">
+                            <div class="more">
+                                <p class="title">Motives</p>
+                                <p class="info">Playlist &bull; Akshay J</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Gym.jpg" alt="liked">
+                            <div class="more">
+                                <p class="title">Gym</p>
+                                <p class="info">Playlist &bull; Akshay J</p>
+                            </div>
+                        </div>
+                        <div class="album">
+                            <img src="Instrumental.jpg" alt="liked">
+                            <div class="more">
+                                <p class="title">Instrumental Mast...</p>
+                                <p class="info">Playlist &bull; Saket Gokhale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-view">
+                <div class="more-types">
+                    <p class="type all">All</p>
+                    <p class="music more">Music</p>
+                    <p class="podcasts more">Podcasts</p>
+                </div>
+                <div class="most-viewed">
+                    <div class="viewed">
+                        <img src="liked-songs.jpg" alt="">
+                        <p>Liked Songs</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="Karma.jpg" alt="">
+                        <p>Karma</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="Money.png" alt="">
+                        <p>Money &#128184;</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="on repeat.jpg" alt="">
+                        <p>On Repeat</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="Daily Drive.jpg" alt="">
+                        <p>Daily Drive</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="Hard beats.jpg" alt="">
+                        <p>Hard Beats</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="Arijit.jpg" alt="">
+                        <p>Arijit Sing</p>
+                    </div>
+                    <div class="viewed">
+                        <img src="Instrumental.jpg" alt="">
+                        <p>Instrumental Mast...</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="group">
+                        <div class="heading">
+                            <p class="title">Recently played</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="song-sunflower.jpg" alt="">
+                                <p class="art-info"> Sunflower - Spider -<br> Man: Into the Spider-...</p>
+                            </div>
+                            <div class="artist">
+                                <img src="Karma.jpg" alt="">
+                                <p class="art-info">Karma</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="liked-songs.jpg" alt="">
+                                <p class="art-info">Liked Songs</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="Gym.jpg" alt="">
+                                <p class="art-info">Gym</p>
+                            </div>
+                            <div class="artist">
+                                <img src="Arijit.jpg" alt="">
+                                <p class="art-info">Arijit Sing</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="Money.png" alt="">
+                                <p class="art-info">Money &#128184;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g1">
+                        <div class="heading">
+                            <p class="title">Albums by artists you follow</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="follow-6-pe-6.jpg" alt="">
+                                <p class="song-nameg1">6 pe 6</p>
+                                <p class="Sartist">Karma</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="follow-arijit.jpg" alt="">
+                                <p class="song-nameg1">Arijit Singh - Sad Love<br> Songs</p>
+                                <p class="Sartist">Arijit Singh</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="follow-made-you-proud.jpg" alt="">
+                                <p class="song-nameg1">Made You Prout</p>
+                                <p class="Sartist">Karma</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="follow-untiled-01.jpg" alt="">
+                                <p class="song-nameg1">Untitled 01</p>
+                                <p class="Sartist">Karma</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="follow-valentine's-day.jpg" alt="">
+                                <p class="song-nameg1">Valentine's Day Special</p>
+                                <p class="Sartist">Shaan, Arijit Singh, Kumar<br> Sanu</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="follow-bollywood.jpg" alt="">
+                                <p class="song-nameg1">Bollywood Reimagined:...</p>
+                                <p class="Sartist">Ali Merchant, ILA, Arijit<br> Singh, Sonu Nigam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g2">
+                        <div class="heading">
+                            <p class="title">Recommended Station</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="rec-iqlipsa-nova.jpg" alt="">
+                                <p class="info">Aditya A, Iqlipse Nova,<br> Dikshant, Akshath, Adi...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="rec-Aditya Rikhari.jpg" alt="">
+                                <p class="info">Aditya Rikhari, Anuv Jain,<br> Talwiinder, Gajendra Ver...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="rec-ritviz.jpg" alt="">
+                                <p class="info">Lauv, Rochak Kohli,<br> Kavita Seth, The Lo...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="rec-darshan-raval.jpg" alt="">
+                                <p class="info">Sunidhi Chauhan, Sachet<br> Tandon, Darshan Rav...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="rec-Taimour Baig.jpg" alt="">
+                                <p class="info">Taimour Baig, aleemrk,<br> Salem Sandhu, Zever</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="rec-pritam.jpg" alt="">
+                                <p class="info">Pritam, A.R. Rahman, KK,<br> Shankar-Ehsaan-Loy...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g3">
+                        <div class="heading">
+                            <p class="title">Popular radio</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="radio-shreya-ghoshal.jpg" alt="">
+                                <p class="info">Shreya Ghoshal, Atif<br> Aslam, Shankar-Ehs...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="radio-kishore-kumar.jpg" alt="">
+                                <p class="info">Kishore Kumar, Mukesh,<br> Kalyanji-Anandji, Hem...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="radio-a.r.rahman.jpg" alt="">
+                                <p class="info">Arijit Singh, A.R. Rahman,<br> K. S. Chithra, Shan...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="radio-diljit-dosanjh.jpg" alt="">
+                                <p class="info">Shashwat Sachdev, Diljit<br> Dosanjh, AP Dhillon, C...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="radio-kumar-sanu.jpg" alt="">
+                                <p class="info">Alka Yagnik, Kumar Sanu,<br> Anuradha Paudwal, R...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="radio-kk.jpg" alt="">
+                                <p class="info">Arijit Singh, Pritam,<br> Vishal-Shekhar, KK, Roop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g4">
+                        <div class="heading">
+                            <p class="title">Your favorite artists</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="artist">
+                                <img src="pop-darshan-raval.jpg" alt="">
+                                <p class="fav-art-info">Darshan Raval</p>
+                            </div>
+                            <div class="artist">
+                                <img src="pop-sachet-tandon.jpg" alt="">
+                                <p class="fav-art-info">Sachet Tandon</p>
+                            </div>
+                            <div class="artist">
+                                <img src="pop-karma.jpg" alt="">
+                                <p class="fav-art-info">Karma</p>
+                            </div>
+                            <div class="artist">
+                                <img src="pop-anuv-jain.jpg" alt="">
+                                <p class="fav-art-info">Anuv Jain</p>
+                            </div>
+                            <div class="artist">
+                                <img src="pop-ap-dhillon.jpg" alt="">
+                                <p class="fav-art-info">AP Dhillon</p>
+                            </div>
+                            <div class="artist">
+                                <img src="pop-iqlipse nova.jpg" alt="">
+                                <p class="fav-art-info">Iqlipse Nova</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g5">
+                        <div class="heading">
+                            <p class="title">Best of artists</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="best-arijit-singh.jpg" alt="">
+                                <p class="info">Arijit Singh, Pritam,<br> Shashwat Sachdev, Mit...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="best-yo-yo-honey-singh.jpg" alt="">
+                                <p class="info">This is Yo Yo Honey<br> Singh. The essential tra...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="best-anuv-jain.jpg" alt="">
+                                <p class="info">This is Anuv Jain. The<br> essential tracks, all...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="best-darshan-raval.jpg" alt="">
+                                <p class="info">This is Darshan Raval The<br> essential tracks, all in...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="best-atif-aslam.jpg" alt="">
+                                <p class="info">This is Atif Aslam. The<br> essential tracks, all in...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="best-aditya-rikhari.jpg" alt="">
+                                <p class="info">This is Aditya Rikhari. The<br> essential tracks, all in...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g6">
+                        <div class="heading">
+                            <p class="title">Party</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="party-new-year-party.jpg" alt="">
+                                <p class="info">Dance your way to 2026<br> with these...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="party-dance-party.jpg" alt="">
+                                <p class="info">Dance to the rhythm and<br> move your feet!</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="pop-tulum-party.jpg" alt="">
+                                <p class="info">Dance the night away<br> and just blame it on...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="party-punjabi wedding.jpg" alt="">
+                                <p class="info">The big fat playlist for<br> your grand wedding</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="party-new in dance.jpg" alt="">
+                                <p class="info">Beats just got hardcore<br> with these...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="party-i-pop party.jpg" alt="">
+                                <p class="info">Beats per minute just got<br> hectic! Rock the...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g7">
+                        <div class="heading">
+                            <p class="title">Happy</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="happy-mykonos calling.jpg" alt="">
+                                <p class="info">mykonos season is here.</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="happy-barso-re.jpg" alt="">
+                                <p class="info">The fresh, earthy smell<br> and breezy weather set...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="happy-indie shower tuner.jpg" alt="">
+                                <p class="info">Pouring Indie tunes for all<br> you bathroom singers.</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="happy-happy oye.jpg" alt="">
+                                <p class="info">The ultimate mood<br> booster for Happy, Lu...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="happy-happy vibes malayalam.jpg" alt="">
+                                <p class="info">It's time to vibe to these<br> happy hits from...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="happy-punjabi wedding.jpg" alt="">
+                                <p class="info">The big fat playlist for<br> your grand wedding</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g8">
+                        <div class="heading">
+                            <p class="title">Featured Charts</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="fea-top songs global.jpg" alt="">
+                                <p class="info">Your weekly update of the<br> most played...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="fea-viral 50 india.jpg" alt="">
+                                <p class="info">Your daily update of the<br> most viral tracks...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="fea-top songs india.jpg" alt="">
+                                <p class="info">Your weekly update of the<br> most played...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="fea-top 50 india.jpg" alt="">
+                                <p class="info">Your daily update of the<br> most played...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="fea-viral 50 global.jpg" alt="">
+                                <p class="info">Your daily update of the<br> most viral tracks...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="fea-top 50 global 2.jpg" alt="">
+                                <p class="info">Your daily update of the<br> most played...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g9">
+                        <div class="heading">
+                            <p class="title">Sad songs</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="sad-all the feels.jpg" alt="">
+                                <p class="info">All the vibes. All the feels.</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="sad-sad haryanvi hits.jpg" alt="">
+                                <p class="info">Dive into the deepest<br> emotions with these...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="sad-love in haryana.jpg" alt="">
+                                <p class="info">Tune in to all love hits<br> from Haryana.</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="sad-sad hours panjabi.jpg" alt="">
+                                <p class="info">Caution! Heartbreak zone<br> ahead</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="sad-sad hindi melodies.jpg" alt="">
+                                <p class="info">Soulful tunes for the<br> heart that has loved...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="sad-sad girl starter pack.jpg" alt="">
+                                <p class="info">Sapphic songs that<br> defined your music...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g10">
+                        <div class="heading">
+                            <p class="title">Chill</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="chill-romanticizing lif.jpg" alt="">
+                                <p class="info">it's the little things</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="chill-chai and acoustic.jpg" alt="">
+                                <p class="info">Magic of acoustic poured<br> into your Ch...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="chill-desi fofi.jpg" alt="">
+                                <p class="info">*vibing in desi*</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="chill-chilled dance hits.jpg" alt="">
+                                <p class="info">The softer side of dance.</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="chill-lowkey tech.jpg" alt="">
+                                <p class="info">Chill techno, melodic<br> house and tech house.</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="chill-chill station.jpg" alt="">
+                                <p class="info">Soft chill for the dreamy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group g11">
+                        <div class="heading">
+                            <p class="title">Instrumental</p>
+                            <p class="show-all">Show all</p>
+                        </div>
+                        <div class="music-and-albums">
+                            <div class="music-album">
+                                <img src="inst-hindustani Instrumental.jpg" alt="">
+                                <p class="info">Instrumentals from the<br> North Indian...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="inst-electronic running.jpg" alt="">
+                                <p class="info">KDriving electronic<br> grooves for imp...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="inst-reading adventure.jpg" alt="">
+                                <p class="info">Scores and soundtracks<br> for...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="inst-instrumental dance hits.jpg" alt="">
+                                <p class="info">You know all the tracks,<br> you just can't....</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="inst-atmospheric sci-fi soundtracks.jpg" alt="">
+                                <p class="info">Enter another dimension<br> of classical music with...</p>
+                            </div>
+                            <div class="music-album">
+                                <img src="inst-fright fest.jpg" alt="">
+                                <p class="info">Don't spill your popcorn...<br> these scar...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <hr>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="view-song">
+                <div class="payed_song">
+                    <label for="expand" class="onhover"><i class="fa-solid fa-angle-left"></i></label>
+                    <h4>Sunflower-Spider</h4>
+                    <i class="onhover fa-solid fa-ellipsis"></i>
+                    <i class="onhover fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+                <div class="scroll_area">
+                    <div class="view_song">
+                        <img src="song-sunflower.jpg" alt="">
+                        <div class="song_info">
+                            <div class="title">
+                                <h1>Sunflower-Spider-</h1>
+                                <div class="artist_info">
+                                    <h3>Post Malone,</h3>
+                                    <h3>Swae Lee</h3>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div class="about_artist">
+                            <div class="view_artist">
+                                <p>About the artist</p>
+                                <img src="artist-post-malone.jpg" alt="">
+                                <h3>Post Malone</h3>
+                                <div class="listeners">
+                                    <div class="numbers">
+                                        <p>61,052,337 &ThinSpace;&ThinSpace;&ThinSpace; monthly listeners</p>
+                                    </div>
+                                    <p class="follow">Follow</p>
+                                </div>
+                                <div class="about">Diamond-certified American hitmaker Post Malone Bridges the gap
+                                    between the worlds of...</div>
+                            </div>
+                        </div>
+                        <div class="credits">
+                            <div class="cards_top">
+                                <p class="cred">Credits</p>
+                                <p class="show_all">Show all</p>
+                            </div>
+                            <div class="group">
+                                <div class="artist">
+                                    <p class="p1">Post Malone</p>
+                                    <p class="p2">Main Artist</p>
+                                </div>
+                                <p class="follow">Follow</p>
+                            </div>
+                            <div class="group">
+                                <div class="artist">
+                                    <p class="p1">Swae Lee</p>
+                                    <p class="p2">Main Artist</p>
+                                </div>
+                                <p class="follow">Follow</p>
+                            </div>
+                            <div class="group">
+                                <div class="artist">
+                                    <p class="p1">Carter Lang</p>
+                                    <p class="p2">Composer &bull; Lyricist</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                        </div>
+                        <div class="on_tour">
+                            <div class="cards_top">
+                                <p class="cred">On tour</p>
+                                <p class="show_all">Show all</p>
+                            </div>
+                            <div class="group">
+                                <img src="may-13.png" alt="">
+                                <div class="sub_group">
+                                    <p class="p1">EI Paso</p>
+                                    <p class="p2">Post Malone, Jelly...</p>
+                                    <p class="p2">Wed 7:30 PM &bull; Sun...</p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <img src="may-26.png" alt="">
+                                <div class="sub_group">
+                                    <p class="p1">Birmingham</p>
+                                    <p class="p2">Post Malone, Jelly...</p>
+                                    <p class="p2">Tue 7:30...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue">
+                            <div class="cards_top">
+                                <p class="cred">Next in queue</p>
+                                <p class="show_all">Open queue</p>
+                            </div>
+                            <div class="group">
+                                <img src="song_jalebi_baby.jpg" alt="">
+                                <div class="sub_group">
+                                    <p class="p1">Jalebi Baby</p>
+                                    <p class="p2">Tesher</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="playing-bar">
+            <div class="song">
+                <img src="song-sunflower.jpg" alt="sunflower" class="my-song">
+                <div class="song-info">
+                    <p class="song-name">Sunflower-Spider-Man:Into the...</p>
+                    <p class="artist">Post Malone, Swae Lee</p>
+                </div>
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div class="play-bar">
+                <div class="options">
+                    <img src="player_icon1.png" alt="icon1" class="icon1">
+                    <img src="player_icon2.png" alt="icon2" class="icon2">
+                    <img src="player_icon3.png" alt="icon3" class="icon3">
+                    <img src="player_icon4.png" alt="icon4" class="icon4">
+                    <img src="player_icon5.png" alt="icon5" class="icon5">
+                </div>
+                <div class="duration">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="curr-time">2:45</span>
+                </div>
+            </div>
+            <div class="more">
+                <div class="options2">
+                    <i class="fa-solid fa-headset"></i>
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="volum">
+                        <input type="range" min="0" max="100" class="volume-level" step="1">
+                    </div>
+                    <i class="fa-solid fa-computer"></i>
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
